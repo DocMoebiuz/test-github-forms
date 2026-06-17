@@ -28,7 +28,7 @@ body:
         1. Do the following '...'
         1. See error...
     validations:
-    required: false
+      required: false
   - type: textarea
     attributes:
       label: Expected result?
