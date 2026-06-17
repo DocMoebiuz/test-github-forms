@@ -1,0 +1,89 @@
+name: 🐞 Bug Report
+description: File a bug report.
+title: "[Bug] <title>"
+labels: ["bug"]
+type: bug
+assignees:
+  - docmoebiuz
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Provide a summary of what issue you are experiencing?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. With these devices...
+        1. With this situation in the sim...
+        1. Do the following '...'
+        1. See error...
+    validations:
+    required: false
+  - type: textarea
+    attributes:
+      label: Expected result?
+      description: |
+        What is the result that you expected after doing these steps?
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Actual result?
+      description: |
+        What is the actual result that you got?
+    validations:
+      required: false
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        -Latest Stable
+        -Latest Beta
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: sim
+    attributes:
+      label: What simulator are you seeing the problem on?
+      multiple: true
+      options:
+        - Microsoft Flight Simulator 2020
+        - Microsoft Flight Simulator 2024
+        - X-Plane 12
+        - X-Plane 11 or older
+  - type: upload
+    id: log
+    attributes:
+      label: Upload log file (log.txt)
+      description: You find the log file at `%LocalAppData%/FlightSimBuilder/FlightSimBuilder Launcher`.
+    validations:
+      required: false
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Upload screenshots
+      description: If applicable, add screenshots to help explain your problem.
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
