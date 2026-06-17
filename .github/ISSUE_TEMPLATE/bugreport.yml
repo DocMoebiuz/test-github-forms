@@ -70,6 +70,7 @@ body:
     id: sim
     attributes:
       label: What simulator are you seeing the problem with?
+      description: Please tell us the exact simulator version you are using.
       multiple: true
       options:
         - Microsoft Flight Simulator 2020
