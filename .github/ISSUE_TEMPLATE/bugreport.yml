@@ -50,11 +50,11 @@ body:
       description: Tell us which FlightSimBuilder product are you experiencing the issue with.
       multiple: true
       options:
-        - label: G1000
-        - label: Audio panel
-        - label: Steam gauge panel
-        - label: G530
-        - label: G430
+        - G1000
+        - Audio panel
+        - Steam gauge panel
+        - G530
+        - G430
   - type: dropdown
     id: version
     attributes:
