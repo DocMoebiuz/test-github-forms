@@ -44,6 +44,18 @@ body:
     validations:
       required: false
   - type: dropdown
+    id: products
+    attributes:
+      label: Which product is affected?
+      description: Tell us which FlightSimBuilder product are you experiencing the issue with.
+      multiple: true
+      options:
+        - label: G1000
+        - label: Audio panel
+        - label: Steam gauge panel
+        - label: G530
+        - label: G430
+  - type: dropdown
     id: version
     attributes:
       label: Version
@@ -57,13 +69,19 @@ body:
   - type: dropdown
     id: sim
     attributes:
-      label: What simulator are you seeing the problem on?
+      label: What simulator are you seeing the problem with?
       multiple: true
       options:
         - Microsoft Flight Simulator 2020
         - Microsoft Flight Simulator 2024
         - X-Plane 12
         - X-Plane 11 or older
+  - type: input
+    id: aircraft
+    attributes:
+      label: Aircraft / Addon 
+      description: What aircraft or addon are you seeing the problem with?
+      placeholder: e.g., Asobo C172 (Steam gauges)
   - type: upload
     id: log
     attributes:
