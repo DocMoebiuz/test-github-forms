@@ -49,8 +49,8 @@ body:
       label: Version
       description: What version of our software are you running?
       options:
-        -Latest Stable
-        -Latest Beta
+        - Latest Stable
+        - Latest Beta
       default: 0
     validations:
       required: true
